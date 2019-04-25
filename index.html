@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Dog Rate</title>
+</head>
+<body>
+
+  <nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Rate My Dog!</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#">Rate</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="#">Rate</a></li>
+  <li><a href="dashboard.html">Dashboard</a></li>
+</ul>
+
+  <div class='flex-container'>
+    <h1>Rate the Doggos</h1>
+    <div class='flex-container'>
+      <h5>Picky dog person?</h5>
+      <div class='grid-container'>
+        <h6>Choose a breed: </h6>
+        <div>
+          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Breed</a>
+          <ul id='dropdown1' class='dropdown-content'>
+          <li ><a href="#">any</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id='header'>
+
+    </div>
+    <img id='imgUrl' src="https://images.unsplash.com/photo-1526137966266-60618b40bcd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=60" alt="Puppies!">
+    <div class='grid-container'>
+      <div class='grid-container'>
+      <div class="input-field col s12">
+        <select id='rating'>
+          <option value="" selected="selected">---</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</oselectElement.selectedIndexption>
+          <option value="15">15</option>
+          <option value="16">16</option>
+        </select>
+        <label>Rating</label>
+      </div>
+      <h6>/10</h6>
+      </div>
+      <a id='button2' class="waves-effect waves-light btn"><i class="material-icons right"></i>Submit!</a>
+    </div>
+    <a id='button' class="waves-effect waves-light btn"><i class="material-icons right"></i>Next!</a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

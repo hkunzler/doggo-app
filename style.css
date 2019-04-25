@@ -1,0 +1,39 @@
+body{
+  background: #ecb0e170;
+}
+
+img{
+  widows: 100%;
+  height:500px;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 25px;
+}
+
+nav{
+  background: #7D5BA6;
+}
+
+.btn {
+  background: #55D6BE;
+  margin-bottom: 25px;
+}
+
+#showDogs{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+#showDogs h6{
+  padding-bottom: 25px;
+}
