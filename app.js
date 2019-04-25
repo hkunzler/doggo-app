@@ -67,8 +67,8 @@ button.addEventListener("click", function() {
     XHR.open("GET", `https://dog.ceo/api/breed/${window.location.hash.slice(1)}/images/random`);
     console.log(window.location.hash.slice(1));
     header.innerHTML =  ''
-    h1.innerHTML = `Searching all ${window.location.hash.slice(1)}`
-    header.appendChild(h1)
+    h6.innerHTML = `Searching all ${window.location.hash.slice(1)}`
+    header.appendChild(h6)
   }
   XHR.send();
 });
