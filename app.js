@@ -61,13 +61,13 @@ button.addEventListener("click", function() {
     XHR.open("GET", `https://dog.ceo/api/breeds/image/random`);
     console.log(window.location.hash);
     header.innerHTML =  ''
-    h6.innerHTML =  'Searching all dogs'
+    h6.innerHTML =  'Browsing all dogs'
     header.appendChild(h6)
   } else {
     XHR.open("GET", `https://dog.ceo/api/breed/${window.location.hash.slice(1)}/images/random`);
     console.log(window.location.hash.slice(1));
     header.innerHTML =  ''
-    h6.innerHTML = `Searching all ${window.location.hash.slice(1)}`
+    h6.innerHTML = `Browsing all ${window.location.hash.slice(1)}`
     header.appendChild(h6)
   }
   XHR.send();
