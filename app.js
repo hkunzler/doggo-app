@@ -31,7 +31,7 @@ $('a.breedSelect').click(function() {
   var id = $(this.attr('id'))
   console.log(id);
 })
-$("#button2").on("click", function () {
+$("#submitRating").on("click", function () {
   if (rating.value >= 10) {
     var favs = JSON.parse(localStorage.getItem("allFav"));
     if (favs == null) favs = [];
