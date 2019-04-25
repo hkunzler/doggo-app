@@ -6,7 +6,7 @@ img{
   width: 50%;
   /* height:500px; */
 }
-h1{
+h1, h6{
   text-align: center;
 }
 .flex-container{
@@ -44,4 +44,8 @@ nav .brand-logo{
 
 #showDogs h6{
   padding-bottom: 25px;
+}
+
+h6{
+  color: black;
 }

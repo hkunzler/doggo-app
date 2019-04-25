@@ -56,13 +56,13 @@ button.addEventListener("click", function() {
   };
   var breed = document.getElementsByClassName('breedSelect')[0].value
   var header = document.getElementById('header')
-  var h1 = document.createElement(h1)
+  var h6 = document.createElement('h6')
   if (window.location.hash === '') {
     XHR.open("GET", `https://dog.ceo/api/breeds/image/random`);
     console.log(window.location.hash);
     header.innerHTML =  ''
-    h1.innerHTML =  'Searching all dogs'
-    header.appendChild(h1)
+    h6.innerHTML =  'Searching all dogs'
+    header.appendChild(h6)
   } else {
     XHR.open("GET", `https://dog.ceo/api/breed/${window.location.hash.slice(1)}/images/random`);
     console.log(window.location.hash.slice(1));
